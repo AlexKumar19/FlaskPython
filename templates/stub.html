@@ -7,10 +7,62 @@
 <!- This is a replacement block for Body in base.html -->
 {% block body %}
     <!- Try building a new body here, bootstrap is a wise choice ->
-    <div class="px-5 py-5 mx-auto">
-        <h1 class="text-primary"><strong>Stubby Body</strong></h1>
-        <p class="text-secondary">My name is Alex Kumar, This is for CSP class, test for edits, edit 2</p>
+<style> .wrapper2 {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      </style>
+      <div class="wrapper2">
+<h1>About me!</h1>
+<img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3202.png">
+    <details>
+
+        <summary>Information about me</summary>
+    
+        - I enjoy playing basketball
+        <br>
+        - I like Kevin Durant, I also like Luka Doncic
+        <br>
+        - I like to go to the gym and I enjoy playing with my dog
+        <br>
+        - I also really like going to the beach 
+    
+    </details>
+    <br>
+    <br>
+    <button type="button" id="datebutton">
+        Show date
+        </button>
+        <p id="Time"></p>
+        <script>
+            var button = document.getElementById("datebutton")
+            var date = document.getElementById("Time")
+            button.onclick=function() {
+                date.innerHTML = new Date()
+            }
+            
+        </script>
+    <br>
+    <br>
+    <details>
+
+        <summary>Favorite Activities!</summary>
+    
+        - I like to watch basketbal!
+        <br>
+        - I like to swim and play beach volleyball
+        <br>
+        - I like playing minecraft
+        <br>
+        - I like to play with my dog maxie
+    
+    </details>
+    <br>
+    <a href="https://alexkumar19.github.io/fastpages-APCSP/" target="_blank"><button class="alex">Link to my Fastpages</button></a>
     </div>
+    
 {% endblock %}
 
 <!- This is turning off birds background from base.html -->
