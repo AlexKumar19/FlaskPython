@@ -15,37 +15,21 @@
       }
       </style>
       <div class="wrapper2">
-<h1>About me!</h1>
-<img src="https://a.espncdn.com/combiner/i?img=/i/headshots/nba/players/full/3202.png">
+        <h1 class="text-primary">My Daily Schedule!</h1>
     <details>
 
-        <summary>Information about me</summary>
+        <summary>Information about my day</summary>
     
-        - I enjoy playing basketball
+        - I normally have basketball practice
         <br>
-        - I like Kevin Durant, I also like Luka Doncic
+        - I spend a lot of time doing my homework
         <br>
-        - I like to go to the gym and I enjoy playing with my dog
+        - I like to go to the gym sometimes I spend time reading
         <br>
-        - I also really like going to the beach 
+        - Lastly, I sometimes go to the library to work on my classwork!
     
     </details>
-    <br>
-    <br>
-    <button type="button" id="datebutton">
-        Show date
-        </button>
-        <p id="Time"></p>
-        <script>
-            var button = document.getElementById("datebutton")
-            var date = document.getElementById("Time")
-            button.onclick=function() {
-                date.innerHTML = new Date()
-            }
-            
-        </script>
-    <br>
-    <br>
+
     <details>
 
         <summary>Favorite Activities!</summary>
@@ -59,8 +43,84 @@
         - I like to play with my dog maxie
     
     </details>
+    <button type="button" class="mt-3 btn btn-secondary" id="datebutton">
+        Show date
+        </button>
+        <p id="Time"></p>
+        <script>
+            var button = document.getElementById("datebutton")
+            var date = document.getElementById("Time")
+            button.onclick=function() {
+                date.innerHTML = new Date()
+            }
+            
+        </script>
     <br>
-    <a href="https://alexkumar19.github.io/fastpages-APCSP/" target="_blank"><button class="alex">Link to my Fastpages</button></a>
+    <style>
+        table {
+          border-collapse: collapse;
+          border-spacing: 0;
+          width: 50%;
+          border: 1px solid #ddd;
+        }
+        
+        th, td {
+          text-align: left;
+          padding: 16px;
+        }
+        
+        tr:nth-child(even) {
+          background-color: #f2f2f2;
+        }
+        </style>
+    <table class="center">
+        <tr>
+          <th>Event</th>
+          <th>Start</th>
+          <th>End</th>
+        </tr>
+        <tr>
+          <td>School</td>
+          <td>8:35</td>
+          <td>3:45</td>
+        </tr>
+        <tr>
+          <td>Practice</td>
+          <td>4:00</td>
+          <td>5:00</td>
+        </tr>
+        <tr>
+          <td>Snack/Break</td>
+          <td>5:00</td>
+          <td>5:40</td>
+        </tr>
+        <tr>
+            <td>Homework/Review Time</td>
+            <td>5:45</td>
+            <td>7:00</td>
+        </tr>
+        <tr>
+            <td>Dinner Time!</td>
+            <td>7:00</td>
+            <td>7:50</td>
+        </tr>
+        <tr>
+            <td>More homework review / reading time</td>
+            <td>8:00</td>
+            <td>9:15</td>
+        </tr>
+        <tr>
+            <td>Shower/ get ready for bed</td>
+            <td>9:15</td>
+            <td>9:35</td>
+          </tr>
+          <tr>
+            <td>Sleep!</td>
+            <td>9:40</td>
+            <td>n/a</td>
+          </tr>
+      </table>
+    <a href="https://alexkumar19.github.io/fastpages-APCSP/" target="_blank"><button class="text-white mt-3 alex btn btn-info">Link to my Fastpages</button></a>
     </div>
     
 {% endblock %}
